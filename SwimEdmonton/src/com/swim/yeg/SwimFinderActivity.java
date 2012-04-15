@@ -24,6 +24,9 @@ public class SwimFinderActivity extends Activity implements LocationListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
+        ParseHelper pHelp = new ParseHelper();
+        pHelp.setGeoPoints();
+
         // BELOW CODE AND COMMENTS NEED TO BE CITED OR SUBSTANTIALLY CHANGED -Joel
 		// Get the location manager
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -42,9 +45,6 @@ public class SwimFinderActivity extends Activity implements LocationListener {
 			//Toast error = Toast.makeText(this, "Provider not available", 5);
 			//error.show();
 		}
-
-        ParseHelper pHelp = new ParseHelper();
-        pHelp.setGeoPoints();
 	}
 
 	/* Request updates at startup */
