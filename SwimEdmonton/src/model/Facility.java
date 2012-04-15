@@ -5,32 +5,34 @@ import java.util.Collection;
 
 public class Facility {
 
-	private double coord_longitude;
-	private double coord_latitude;
-	//address?
+	private double longitude;
+	private double latitude;
+	private String address;
 	private double price_min;
 	private double price_max;
 	private ArrayList<Feature> features;
 	
 	public double getLongitude() {
-		return coord_longitude;
+		return longitude;
 	}
 	
-	public double getCoord_latitude() {
-		return coord_latitude;
+	public double getLatitude() {
+		return latitude;
 	}
 
-	public double getPrice_min() {
+	public double getMinPrice() {
 		return price_min;
 	}
 
-	public double getPrice_max() {
+	public double getMaxPrice() {
 		return price_max;
 	}
 
 	public ArrayList<Feature> getFeatures() {
 		return features;
 	}
-
-
+	
+	public String getAddress() {
+		return address;
+	}
 }
