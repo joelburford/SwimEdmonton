@@ -11,11 +11,10 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import model.ParseHelper;
 
 public class SwimFinderActivity extends Activity implements LocationListener {
 	/** Called when the activity is first created. */
-	private TextView latitudeField;
-	private TextView longitudeField;
 	private LocationManager locationManager;
 	private String provider;
 /** Called when the activity is first created. */
@@ -24,29 +23,28 @@ public class SwimFinderActivity extends Activity implements LocationListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		
-		latitudeField = (TextView) findViewById(R.id.testBox);
-		longitudeField = (TextView) findViewById(R.id.testBox2);
 
+        // BELOW CODE AND COMMENTS NEED TO BE CITED OR SUBSTANTIALLY CHANGED -Joel
 		// Get the location manager
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-		// Define the criteria how to select the location provider -> use
-		// default
+		// Define the criteria how to select the location provider -> use default
 		Criteria criteria = new Criteria();
 		provider = locationManager.getBestProvider(criteria, false);
 		Location location = locationManager.getLastKnownLocation(provider);
 
 		// Initialize the location fields
 		if (location != null) {
-			System.out.println("Provider " + provider + " has been selected.");
-			int lat = (int) (location.getLatitude());
-			int lng = (int) (location.getLongitude());
-			latitudeField.setText(String.valueOf(lat));
-			longitudeField.setText(String.valueOf(lng));
+			double lat = location.getLatitude();
+			double lng = location.getLongitude();
+            //Toast hooray = Toast.makeText(this, "(" + lng + ", " + lat + ")", 5);
+            //hooray.show();
 		} else {
-			Toast error = Toast.makeText(this, "Provider not available", 5);
-			error.show();
+			//Toast error = Toast.makeText(this, "Provider not available", 5);
+			//error.show();
 		}
+
+        ParseHelper pHelp = new ParseHelper();
+        pHelp.setGeoPoints();
 	}
 
 	/* Request updates at startup */
@@ -61,9 +59,6 @@ public class SwimFinderActivity extends Activity implements LocationListener {
 		  //Location should be queried only once when activity is entered or resumed
 		int lat = (int) (location.getLatitude());
 		int lng = (int) (location.getLongitude());
-		latitudeField.setText(String.valueOf(lat));
-		longitudeField.setText(String.valueOf(lng));
-		
 	}
 
 	public void onStatusChanged(String provider, int status, Bundle extras) {
