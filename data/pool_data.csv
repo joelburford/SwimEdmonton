@@ -1,14 +1,14 @@
 "NAME","LATITUDE","LONGITUDE","LOCATION","Type","Address"
-"Borden",53.56,-113.45,"(53.5632719351119, -113.45467195093)","Outdoor",
-"Fred Broadstock",53.55,-113.59,"(53.5490294182375, -113.593339758715)","Outdoor",
-"Mill Creek",53.52,-113.47,"(53.5194797817797, -113.473822469793)","Outdoor",
-"Oliver",53.54,-113.53,"(53.544877764822, -113.526417427066)","Outdoor",
-"Queen Elizabeth",53.52,-113.51,"(53.523956, -113.511642)","Outdoor",
-"A.C.T. Aquatics and Recreation Centre",53.56,-113.39,"(53.556209050028, -113.387022783642)","Indoor",
-"Eastglen Leisure Centre",53.57,-113.45,"(53.5669867070818, -113.445270239)","Indoor",
-"Commonwealth Stadium",53.56,-113.48,"(53.5590361343565, -113.4777040636)","Indoor",
-"Londonderry Fitness and Leisure Centre",53.61,-113.44,"(53.6073580287185, -113.444563016319)","Indoor",
-"O'Leary Fitness and Leisure Centre",53.59,-113.48,"(53.5932168698336, -113.476930441118)","Indoor",
+"Borden",53.56,-113.45,"(53.5632719351119, -113.45467195093)","Outdoor","11200 74th Street"
+"Fred Broadstock",53.55,-113.59,"(53.5490294182375, -113.593339758715)","Outdoor","15720 105th Avenue"
+"Mill Creek",53.52,-113.47,"(53.5194797817797, -113.473822469793)","Outdoor","9555 84th Avenue"
+"Oliver",53.54,-113.53,"(53.544877764822, -113.526417427066)","Outdoor","10315 119th Street"
+"Queen Elizabeth",53.52,-113.51,"(53.523956, -113.511642)","Outdoor","9100 Walterdale Hill"
+"A.C.T. Aquatics and Recreation Centre",53.56,-113.39,"(53.556209050028, -113.387022783642)","Indoor","2909 113th Avenue"
+"Eastglen Leisure Centre",53.57,-113.45,"(53.5669867070818, -113.445270239)","Indoor","11410 68th Street"
+"Commonwealth Stadium",53.56,-113.48,"(53.5590361343565, -113.4777040636)","Indoor","11000 Stadium Road"
+"Londonderry Fitness and Leisure Centre",53.61,-113.44,"(53.6073580287185, -113.444563016319)","Indoor","14528 66th Street"
+"O'Leary Fitness and Leisure Centre",53.59,-113.48,"(53.5932168698336, -113.476930441118)","Indoor","8804 132nd Avenue"
 "Bonnie Doon Leisure Centre",53.52,-113.45,"(53.5238762323606, -113.454484427235)","Indoor","8648 81st Street"
 "Hardisty Fitness and Leisure Centre",53.55,-113.43,"(53.5491611786043, -113.430793208959)","Indoor","10535 65th Street"
 "Mill Woods Recreation Centre",53.46,-113.44,"(53.4571471529795, -113.444507794751)","Indoor","7207 28th Avenue"
