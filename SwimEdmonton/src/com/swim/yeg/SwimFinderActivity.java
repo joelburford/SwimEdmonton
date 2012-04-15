@@ -65,7 +65,7 @@ public class SwimFinderActivity extends Activity implements LocationListener {
 		longitudeField.setText(String.valueOf(lng));
 		
 	}
-	
+
 	public void onStatusChanged(String provider, int status, Bundle extras) {
 		// TODO Auto-generated method stub
 

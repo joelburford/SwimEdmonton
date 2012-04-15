@@ -2,4 +2,9 @@
 <resources>
     <string name="hello">Hello World, ParseStarterProjectActivity!</string>
     <string name="app_name">SwimEdmonton</string>
+    <color name="blue">#0055bb</color>
+    <color name="light_blue1">#bbeeff</color>
+    <color name="light_blue2">#88dddd</color>
+    <color name="light_blue3">#44bbcc</color>
+    <color name="green">#225533</color>
 </resources>
